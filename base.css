@@ -1,0 +1,215 @@
+@charset "utf-8";
+/*============================================
+全般的なスタイル
+============================================*/
+* {
+	margin:0; padding:0; 		/*全要素のマージン・パディングをリセット*/
+}
+body {
+        background-color:#ebebeb;		/*ページ全体の背景色*/
+        font-size:100%;
+        font-family: "ＭＳ ゴシック",sans-serif;
+        line-height:1.5;
+				width: 1024px;
+				display:block;			/*リスト項目をインライン表示にする*/
+				float:left;
+}
+img {border:0;} 				/*画像のボーダーを0にする*/
+p {
+	width:700px;		/*幅の指定*/
+	margin:0px;		/*マージン*/
+	text-indent:1em;		/*インデント幅*/
+	font-size: 18px
+}
+hr {
+	clear:both;		/*フロート配置をクリアする*/
+	width:1024px;		/*幅の指定*/
+	margin:10px 0px;		/*マージン*/
+	border:0.5px dotted #333382;	/*内容の区切りをグレーの点線表示にする*/
+}
+/*============================================
+ヘッダ
+============================================*/
+div#top {
+	width: 1024px;
+	height: 150px;
+	margin-top: 10px;
+}
+div#header {
+	height:150px;				/*ヘッダ部分の高さ*/
+	width:180px;
+	float:inherit;		/*画像を寄せにする*/
+	padding-left: 20px;
+	list-style-type:none;		/*リストマーカー無しにする*/
+}
+#header a:hover img {
+    opacity: 0.75;
+}
+/*============================================
+メインメニュー
+============================================*/
+div#menu {
+  position:absolute;
+  top: 60px;
+  left: 200px;
+	right: 0px;
+	width:864px; height:50px; 	/*メインメニュー部分の幅と高さ*/
+  margin:0px;
+	padding: 0px;		/*上下マージン0px、左右マージン20px*/
+}
+#menu li {
+	list-style-type:none;		/*リストマーカー無しにする*/
+  display:block;			/*リスト項目をインライン表示にする*/
+	float:left;			/*リスト項目を横に並べる*/
+	padding-right: 30px;
+}
+#men li a {
+	color:#2c47a7;		/*文字色*/
+	display:block;			/*リンク部分をブロック表示にする*/
+	width:200px; height:50px;	/*幅と高さ*/
+	text-decoration:none;		/*リンク部分を下線無しにする*/
+}
+#menu li a:hover img{
+opacity: 0.5;
+}
+/*============================================
+show
+============================================*/
+div#lineup{
+	width:700px; height:350px; 	/*メインメニュー部分の幅と高さ*/
+  margin:0px;
+	padding: 60px 0px 0px 155px;
+}
+#lineup li {
+	list-style-type:none;		/*リストマーカー無しにする*/
+  display:block;			/*リスト項目をインライン表示にする*/
+	float:left;			/*リスト項目を横に並べる*/
+	padding: 0px 20px 40px 20px;
+}
+#lineup li a {
+	color:#2c47a7;		/*文字色*/
+	display:block;			/*リンク部分をブロック表示にする*/
+	text-decoration:none;		/*リンク部分を下線無しにする*/
+}
+
+div#jacket {
+	width:720px; height:480px; 	/*メインメニュー部分の幅と高さ*/
+  margin:0px;
+	padding: 30px 0px 0px 155px;		/*上下マージン0px、左右マージン20px*/
+}
+#jacket li {
+	list-style-type:none;		/*リストマーカー無しにする*/
+  display:block;			/*リスト項目をインライン表示にする*/
+	float:left;			/*リスト項目を横に並べる*/
+	padding: 0px 20px 40px 20px;
+}
+#jacket li a {
+	color:#2c47a7;		/*文字色*/
+	display:block;			/*リンク部分をブロック表示にする*/
+	width:200px; height:200px;	/*幅と高さ*/
+	text-decoration:none;		/*リンク部分を下線無しにする*/
+}
+#jacket li a:hover img{
+opacity: 0.9;
+}
+div#eye{
+	width:700px;
+	height:200px;
+	padding: 30px 0px 0px 182px;
+	position: rela;
+	left: 182px;
+	top: 30px;
+}
+div#sentence{
+	width:700px;
+	padding: 0px 0px 0px 182px;
+	position: rela;
+	left: 155px;
+	top: 0px;
+}
+div#sentence{
+    margin:2em 0;
+    position: relative;
+    padding: 0.5em 1.5em;
+    border-top: dashed 3px #333399;
+    border-bottom: dashed 3px #333399;
+}
+div#sentence:before, div#sentence:after{
+    content: '';
+    position: absolute;
+    top: -10px;
+    width: 3px;
+    height: -webkit-calc(100% + 20px);
+    height: calc(100% + 20px);
+    background-color: #333399;
+}
+div#sentence:before {left: 10px;}
+div#sentence:after {right: 10px;}
+div#sentence p {
+    margin: 0;
+    padding: 0;
+}
+p {text-align: center}
+div#recommend{
+	width:700px;
+	float:center;
+	position: relate;
+	left: 182px;
+	top: 40px;
+	padding: 0px 0px 20px 182px;
+}
+div#instagram{
+	width:700px; height:150px; 	/*メインメニュー部分の幅と高さ*/
+  margin:0px;
+	padding: 100px 0px 0px 155px;
+}
+#instagram li {
+	list-style-type:none;		/*リストマーカー無しにする*/
+  display:block;			/*リスト項目をインライン表示にする*/
+	float:left;			/*リスト項目を横に並べる*/
+	padding: 0px 20px 40px 20px;
+}
+/*============================================
+インフォメーション
+============================================*/
+div#info {
+	width:700px;		/*幅の指定*/
+	float:center;			/*カラムを左寄せにする*/
+  padding:100px 50px 0px 200px;		/*パディング*/
+}
+h3 {
+	font-size:14px;			/*文字サイズ*/
+	width:700px;			/*横幅*/
+	padding:10px 0px 10px 20px;		/*パディング*/
+	background-color:#003399;		/*背景色*/
+	color:#ffffff;			/*文字色*/
+	border-radius:3px;			/*角丸にする*/
+}
+#info:hover img{
+   opacity: 0.5;
+}
+hr {
+	clear:both;			/*フロート配置をクリアする*/
+}
+/*============================================
+備考情報
+============================================*/
+div.remarks {
+	margin:0px 10px 10px 10px;
+}
+h4 {
+	color:#000066;
+}
+/*============================================
+フッタ
+============================================*/
+div#footer {
+	clear:both;			/*回り込みを解除する*/
+  height:40px;			/*高さの指定*/
+	padding:10px 0px 0px 0px;	/*パディング*/
+	font-size:x-small;		/*フォントサイズを小さくする*/
+	text-align:center;		/*センタリング*/
+}
+small{
+	color: #333399;
+}
